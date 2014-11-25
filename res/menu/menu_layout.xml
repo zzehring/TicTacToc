@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/reset"
+        android:title="@string/reset_message">
+    </item>
+    <item android:id="@+id/one_second"
+        android:title="@string/one_second_message" />
+    <item android:id="@+id/two_seconds"
+        android:title="@string/two_second_message" />
+    <item android:id="@+id/five_seconds"
+        android:title="@string/five_second_message" />
+    <item android:id="@+id/ten_seconds"
+        android:title="@string/ten_second_message" />
+</menu>
