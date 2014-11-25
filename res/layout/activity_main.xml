@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginTop="@dimen/top_margin">
+        <EditText
+            android:id="@+id/playerName1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+			android:inputType="text"
+			android:padding="@dimen/edit_text_padding"
+			android:layout_marginRight="@dimen/right_margin"
+			android:layout_gravity="center_vertical"
+			android:hint="@string/player_1_default_name">
+        </EditText>
+        <ImageView
+            android:id="@+id/playerImage1"
+            android:layout_weight="1"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:padding="@dimen/image_padding"
+            android:clickable="true"
+            android:onClick="clickImage"
+            android:src="@drawable/red">
+        </ImageView>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:layout_gravity="center">
+        <EditText
+            android:id="@+id/playerName2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+			android:inputType="textPersonName"
+			android:padding="@dimen/edit_text_padding"
+			android:layout_marginRight="@dimen/right_margin"
+			android:layout_gravity="center_vertical"
+			android:hint="@string/player_2_default_name">
+        </EditText>
+        <ImageView
+            android:id="@+id/playerImage2"
+            android:layout_weight="1"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:padding="@dimen/image_padding"
+            android:clickable="true"
+            android:onClick="changeImage"
+            android:src="@drawable/green">
+        </ImageView>
+
+    </LinearLayout>
+    
+    <Button android:id="@+id/start_button"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="@dimen/start_button_height"
+        android:width="@dimen/start_button_width"
+        android:layout_marginTop="@dimen/start_button_topmargin"
+        android:onClick="myClickHandler"
+        android:text="@string/start_button_text"/>
+    
+
+</LinearLayout>
