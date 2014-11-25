@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tic Tac Toc</string>
+	<string name="player_1_default_name">Player 1</string>   
+	<string name="player_2_default_name">Player 2</string>
+	<string name="start_button_text">Start!</string>
+	<string name="reset_message">Reset</string>
+	<string name="one_second_message">1 Second</string>
+	<string name="two_second_message">2 Seconds</string>
+	<string name="five_second_message">5 Seconds</string>
+	<string name="ten_second_message">10 Seconds</string>
+	
+    <dimen name="left_margin">20dp</dimen>
+    <dimen name="right_margin">20dp</dimen>
+    <dimen name="top_margin">50dp</dimen>
+    <dimen name="top_game_margin">20dp</dimen>
+    <dimen name="edit_text_padding">10dp</dimen>
+    <dimen name="image_padding">10dp</dimen>
+    <dimen name="image_width">30dp</dimen>
+    <dimen name="image_height">70dp</dimen>
+    <dimen name="start_button_height">60dp</dimen>
+    <dimen name="start_button_width">200dp</dimen>
+    <dimen name="start_button_topmargin">50dp</dimen>
+    <dimen name="score_margin">20dp</dimen>
+    <dimen name="text_size">15dp</dimen>
+    <dimen name="grid_item_width">60dp</dimen>
+    <dimen name="grid_item_height">60dp</dimen>
+    <dimen name="game_image_width">100dp</dimen>
+    <dimen name="game_image_height">100dp</dimen>
+    
+    <integer name="max_score">5</integer>
+    <integer name="bar_click_time">100</integer>
+    
+    
+
+</resources>
