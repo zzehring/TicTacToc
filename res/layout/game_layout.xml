@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <LinearLayout
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginTop="@dimen/top_game_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1">
+            <ImageView android:id="@+id/player_image_1"
+            	android:layout_width="@dimen/image_width"
+            	android:layout_height="@dimen/image_height"
+       		/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView android:id="@+id/player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:gravity="right">
+		    <ImageView android:id="@+id/player_image_2"
+           		android:layout_width="@dimen/image_width"
+            	android:layout_height="@dimen/image_height"
+            />
+		</LinearLayout>
+        	 
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin">
+    	<ProgressBar android:id="@+id/progress_bar"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	style="@android:style/Widget.ProgressBar.Horizontal"
+        	android:layout_gravity="center"
+        	>
+    	</ProgressBar>
+   	</LinearLayout>
+   	
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+		    
+		    <TableRow android:id="@+id/row_1"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:tag="0">
+            	
+		        <ImageButton android:id="@+id/button_1"
+		            android:layout_width="@dimen/grid_item_width"
+    				android:layout_height="@dimen/grid_item_height"
+    				android:onClick="myClickHandler"
+    				android:tag="0"/>
+		        
+		        <ImageButton android:id="@+id/button_2"
+		            android:layout_width="@dimen/grid_item_width"
+    				android:layout_height="@dimen/grid_item_height"
+    				android:onClick="myClickHandler"
+    				android:tag="1"/>
+		        
+		        <ImageButton android:id="@+id/button_3"
+		            android:layout_width="@dimen/grid_item_width"
+    				android:layout_height="@dimen/grid_item_height"
+    				android:onClick="myClickHandler"
+    				android:tag="2"/>
+		        
+		    </TableRow>
+		    
+		    <TableRow android:id="@+id/row_2"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:tag="1">
+            	
+		        <ImageButton android:id="@+id/button_4"
+		            android:layout_width="@dimen/grid_item_width"
+    				android:layout_height="@dimen/grid_item_height"
+    				android:onClick="myClickHandler"
+    				android:tag="0"/>
+		        
+		        <ImageButton android:id="@+id/button_5"
+		            android:layout_width="@dimen/grid_item_width"
+    				android:layout_height="@dimen/grid_item_height"
+    				android:onClick="myClickHandler"
+    				android:tag="1"/>
+		        
+		        <ImageButton android:id="@+id/button_6"
+		            android:layout_width="@dimen/grid_item_width"
+    				android:layout_height="@dimen/grid_item_height"
+    				android:onClick="myClickHandler"
+    				android:tag="2"/>
+		        
+		    </TableRow>
+		    
+		    <TableRow android:id="@+id/row_3"
+		        android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:tag="2">
+            	
+		        <ImageButton android:id="@+id/button_7"
+		            android:layout_width="@dimen/grid_item_width"
+    				android:layout_height="@dimen/grid_item_height"
+    				android:onClick="myClickHandler"
+    				android:tag="0"/>
+		        
+		        <ImageButton android:id="@+id/button_8"
+		            android:layout_width="@dimen/grid_item_width"
+    				android:layout_height="@dimen/grid_item_height"
+    				android:onClick="myClickHandler"
+    				android:tag="1"/>
+		        
+		        <ImageButton android:id="@+id/button_9"
+		            android:layout_width="@dimen/grid_item_width"
+    				android:layout_height="@dimen/grid_item_height"
+    				android:onClick="myClickHandler"
+    				android:tag="2"/>
+		        
+		    </TableRow>
+		    
+        </TableLayout>
+    </LinearLayout>
+        
+    
+
+</LinearLayout>
